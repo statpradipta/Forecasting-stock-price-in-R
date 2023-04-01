@@ -39,6 +39,7 @@ kpss_test<-ur.kpss(tsData, type = c("tau"),
 summary(kpss_test)
 
 tsstationary = diff(tsData, differences=1)
+#tsstationary = tsData
 plot(tsstationary)
 
 # Remove seasonality
