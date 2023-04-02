@@ -15,7 +15,7 @@ nifty50$Close <- as.numeric(nifty50$Close)
 nifty50 <- nifty50[complete.cases(nifty50),]
 
 # Create a time series object
-nifty50_ts <- ts(nifty50$Close, start = c(2014, 4), end = c(2023,3) frequency = 252)
+nifty50_ts <- ts(nifty50$Close, start = c(2014, 4), end = c(2023,3), frequency = 252)
 
 # Plot the time series
 plot(nifty50_ts, main = "NIFTY50 Close Price Time Series", ylab="Price")
