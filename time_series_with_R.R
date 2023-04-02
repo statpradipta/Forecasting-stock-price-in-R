@@ -72,4 +72,3 @@ plot(model$residuals)
 
 predicted_values = forecast(model,h=200, level=c(99.5))
 plot(predicted_values)
-
