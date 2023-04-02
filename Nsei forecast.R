@@ -40,8 +40,8 @@ nifty50_arima <- auto.arima(nifty50_ts, D = 1, trace = TRUE)
 # View the selected model
 nifty50_arima
 
-# Forecast the next 252 days of the NIFTY50 stock price
-nifty50_forecast <- forecast(nifty50_arima, h = 252)
+# Forecast the next 30 days of the NIFTY50 stock price
+nifty50_forecast <- forecast(nifty50_arima, h = 30)
 
 # Plot the forecasted values
-plot(nifty50_forecast, main = "Forecasted NIFTY50 Close Price")
+plot(nifty50_forecast, main = "Forecasted NIFTY50 Close Price", xlab="Time", ylab="Price")
